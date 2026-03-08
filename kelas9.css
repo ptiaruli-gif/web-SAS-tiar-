@@ -1,0 +1,555 @@
+html {
+background-image: url(backgroundpt2.png);
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.btn-mulai{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f23fcea5;
+    color: white;
+    padding: 14px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.btn-mulai:hover{
+    background: #5e2cc9;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    max-width: 900px;
+    background-color: #270263;
+    z-index: 20;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+    margin: 5px 170px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #113d58;
+    position: sticky;         
+    top: 180px;                   
+    z-index: 20;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    border-radius: 20px;
+}
+
+ul li {
+    position: relative;
+    margin: 0 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+
+li {
+    position: relative;
+}
+
+li a, .dropbtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-family: "Bungee Spice";
+    font-size: 15px;
+    text-decoration: none;
+    padding: 16px 24px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+li a.dropbtn:hover {
+    background: linear-gradient(270deg, #045256, #6e9e9b, #cac2b0);
+    background-size: 400% 400%;
+    animation: navGreenMove 3s ease infinite;
+    transform: scale(1.05);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #51c9c3; 
+    top: 100%;
+    min-width: 250px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+    border-radius: 4px;
+    z-index: 20;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: left;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #e4a663; 
+    padding-left: 22px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul > li > a:not(.dropbtn) {
+    color: #ffd54f;
+    font-family: Arial, Helvetica, sans-serif
+    transition 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+ul > li > a:not(.dropbtn):hover {
+    color: white;
+    background: linear-gradient(270deg, #ff9a00, #ff6b6b, #ff9a00);
+    background-size: 500% 500%;
+    animation: gradMove 3s ease infinite;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.8);
+    transform: scale(1.08);
+}
+
+@keyframes gradMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes navGreenMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes ripple {
+    0% { transform: scale(0.8); }
+    100% { transform: scale(1.05); }
+}
+
+@keyframes glowMove {
+    0% { text-shadow: 0 0 5px #fff, 0 0 10px #6b6a65; }
+    50% { text-shadow: 0 0 15px #4c4339, 0 0 30px #6b4a33; }
+    100% { text-shadow: 0 0 5px #fff, 0 0 10px #a19a81; }
+}
+
+.desc {
+margin-left: 0;
+margin-right: 2px;
+padding: 5px;
+font-size: 25px;
+text-align: justify;
+background-color: #cac2b0;
+color: rgb(1, 1, 83);
+width: 100%;
+}
+
+.container-gambar{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.card{
+  position: relative;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card img{
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.overlay p{
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card:hover .overlay{
+  opacity: 1;
+}
+
+h1, h2, h3, p, li {
+  color: white;
+}
+
+.container-gambar{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.cardpenggunaan{
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.cardpenggunaan img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay{
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.cardpenggunaan:hover .overlay{
+  opacity: 1;
+}
+
+.carousel {
+    margin:100px auto;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.grouppenggunaan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 5s infinite linear;
+    padding-right: 1em;
+}
+
+.cardpenggunaan {
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    background: cornflowerblue;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+.positif{
+    background-color: rgba(7, 134, 43, 0.463);
+    background-size: auto;
+    border-radius: 8px;
+    margin: 9px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.negatif{
+    background-color: rgba(134, 26, 7, 0.463);
+    background-size: auto;
+    border-radius: 8px;
+    margin: 9px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.kanansendiri {
+    text-align: right;
+}
+
+.masakinih1 {
+    margin-top: 100px;
+    text-align: center;
+}
+.penjelasanmasakini {
+    background-color: rgba(0, 0, 0, 0.463);
+    background-size: auto;
+    border-radius: 8px;
+    margin: 9px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.lapker {
+    background-color: rgba(17, 98, 173, 0.463);
+    background-size: auto;
+    border-radius: 8px;
+    margin: 9px;
+    padding: 10px;
+    text-align: left;
+}
+
+.medis {
+    background-color: rgba(59, 173, 17, 0.463);
+    background-size: auto;
+    border-radius: 8px;
+    margin: 9px;
+    padding: 10px;
+    text-align: left;
+}
+
+.akademik {
+    background-color: rgba(173, 17, 131, 0.463);
+    background-size: auto;
+    border-radius: 8px;
+    margin: 9px;
+    padding: 10px;
+    text-align: left;
+}
+
+.dafpus {
+    text-align: center;
+    margin-top: 200px;
+}
+
+h2.atas{
+    text-align: center;
+    font-size: 27;
+    color: #E9DFC3;
+}
+
+h1.bawah{
+    text-align: center;
+    background-color: #333446;
+    font-size: 18;
+    color: #EAEFEF;
+}
+
+div.Sifat1 {
+margin-left: auto;
+margin-right: auto;
+background-color: #7175b89b;
+text-align: center;
+border-radius: 5%;
+width: 200px;
+height: 280px;
+
+}
+
+img.gambar1{
+    width: 190px;
+    height: 248px;
+    
+}
+.sifat2:hover .gambar1{
+    margin-right: 2px;
+    opacity: 0;
+}
+.sifat2:hover{
+    background-image: url("me2.jpeg");
+    background-size: cover;
+    border-radius: 5%;
+    width: 185px;
+    height: 235px;
+    
+}
+
+p.Sifat{
+    color: #E9DFC3;
+}
+
+
+p.nama{
+    text-align: center;
+    color: #48ff00;
+    font-size: 20px;
+}
+p.tempat{
+    text-align: center;
+    color: #a77d20;
+    font-size: 17px;
+}
+p.tanggal{
+    text-align: center;
+    color: #0fca0f;
+    font-size: 17px;
+}
+p.alamat{
+    text-align: center;
+    color: #5eb9ff;
+    font-size: 17px;
+}
+p.email{
+    text-align: center;
+    color: rgb(149, 149, 255);
+    font-size: 15px;
+
+}
+p.hobi{
+    text-align: center;
+    color: #61bcfc;
+    font-size: 23px;
+}
+
+.hobi-container{
+  display: flex;        
+  justify-content: center; 
+  gap: 40px;              
+  margin-top: 30px;
+}
+
+div.nari{
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #53a0ff6f;
+    text-align: center;
+    border-radius: 5%;
+    width: 200px;
+    height: 180px;
+}
+
+img.gambarnari{
+    width: 180px;
+    height: 130px;
+}
+
+p.menari{
+    color: #E9DFC3;
+}
+
+div.masak{
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #94c4ff6f;
+    text-align: center;
+    border-radius: 5%;
+    width: 200px;
+    height: 180px;
+}
+
+p.memasak{
+    color: #ffcd45;
+}
+
+img.gambarmasak{
+    width: 180px;
+    height: 130px;
+}
+
+p.makanan{
+    text-align: center;
+    color: #3f7ba5;
+    font-size: 23px;
+}
+
+div.makananfav{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #43474c6f;
+    text-align: center;
+    border-radius: 5%;
+    width: 200px;
+    height: 180px;
+}
+
+img.gambarnasgor{
+width: 175px;
+height: 140px;
+}
+
+p.nasgor{
+    color: #E9DFC3;
+}
+
+p.motto{
+    color: #ffffff;
+    text-align: center;
+}
+
+p.pesan{
+    color: #ffffff;
+    text-align: center;
+}
